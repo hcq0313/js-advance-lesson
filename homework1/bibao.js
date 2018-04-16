@@ -156,3 +156,18 @@ db('x', 1); // 设置data['x']为1
 db('x'); // 返回 1
 // 我们不能直接访问data这个object本身
 // 但是我们可以设置它的成员
+
+(function () {
+    var m = 0;
+    function getM(){
+        return m;
+    }
+    function setM(val){
+        m = val;
+    }
+    window.g = getM;
+    window.f = setM;
+}());
+f(100);
+g();
+//setm的值会覆盖掉上面m的值

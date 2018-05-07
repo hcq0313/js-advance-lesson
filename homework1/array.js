@@ -219,3 +219,16 @@ fromindex	可选的整数参数。规定在字符串中开始检索的位置。�
 console.log(arr8.lastIndexOf(5));//6  从末尾开始往左查找第一个5的位置
 console.log(arr8.lastIndexOf(5,3));//3  从3的位置开始向左查找第一个5的位置
 console.log(arr8.lastIndexOf(5,5));//3  从5的位置开始向左查找第一个5的位置
+
+
+arr2=[1,6,8]
+var arr1=[2,5,8]
+arr1.forEach(function(a,i){
+    console.log(a,i,this)
+},arr2)
+VM152:4 2 0 (3) [1, 6, 8]
+VM152:4 5 1 (3) [1, 6, 8]
+VM152:4 8 2 (3) [1, 6, 8]
+//(1)函数第二个参数i表示 索引 从0开始
+//（2）forEach中的第二个参数  是函数当中this的值
+

@@ -58,9 +58,9 @@ console.log(d.getFullYear(),d.getMonth(),d.getDay(),d.getDate(),d.getHours());//
 
 //Date原型方法 转成字符串相关
 var d = new Date(2012,3,21,15,7,23,234);
-console.log(d.toTimeString(),"___",d.toLocaleTimeString());
-console.log(d.toDateString(),"___",d.toLocaleDateString());
-console.log(d.toJSON());
+console.log(d.toTimeString(),"___",d.toLocaleTimeString()); //15:07:23 GMT+0800 (中国标准时间) ___ 下午3:07:23
+console.log(d.toDateString(),"___",d.toLocaleDateString()); //Sat Apr 21 2012 ___ 2012/4/21
+console.log(d.toJSON());  //2012-04-21T07:07:23.234Z
 
 var today =new Date();
 today.setMonth(6);

@@ -82,7 +82,7 @@ console.log(regExp.test("ab"));//false
 var regExp = /a/gi;
 while (regExp.test("aaa")){
     console.log(regExp.lastIndex);  //1  2  3
-    //lastIndex是本次匹配完最后一个下标 从1开始
+    //lastIndex是下一次匹配开始的下标，index是开始匹配的下标，从0开始
 
 console.log(/oo/.test("moon")); //true
 console.log(/oo\b/.test("moon"));  //false

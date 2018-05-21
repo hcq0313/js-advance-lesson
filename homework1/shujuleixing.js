@@ -55,3 +55,23 @@ function foo(x){
 }
 foo(a);
 console.log(a.y);   123
+
+
+
+//改变参数的值
+var x=[1];
+function foo(y){
+	y[0]=2;
+}
+foo(x);
+console.log(x[0]);
+//2
+
+//不改变参数的值
+var x=1;
+function foo(y){
+	y=2;
+}
+foo(x);
+console.log(x);
+//1

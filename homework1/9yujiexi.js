@@ -140,3 +140,15 @@ foo();
 
 console.log("i:",i);//0
 console.log("j:",j);//报错
+
+
+***局部变量会屏蔽外部变量、
+var i=10;
+function aa(){
+    console.log(i);
+    var i=5;
+    console.log(i);
+}
+aa();
+//undefined
+//5

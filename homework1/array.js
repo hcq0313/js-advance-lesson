@@ -123,7 +123,7 @@ console.log(shiftElement,arr2);
 var newLength = arr2.unshift(1,2);//返回新的数组长度
 console.log(newLength,arr2);
 
-var popElement = arr2.pop();//返回pop出去的元素
+var popElement = arr2.pop();//返回pop出去的元素，pop是删除最后一个元素
 console.log(popElement,arr2);
 
 var newLength = arr2.push(77,88);//返回新的数组长度
@@ -232,3 +232,8 @@ VM152:4 8 2 (3) [1, 6, 8]
 //(1)函数第二个参数i表示 索引 从0开始
 //（2）forEach中的第二个参数  是函数当中this的值
 
+错题：
+var aa=[1,2,3];
+var bb=aa;
+bb.shift();//shift 删除第一个元素
+console.log(aa); //[2,3]
